@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './CSS/index.css';
-import App from './Components/App';
 import Header from './Components/Header';
+import CardFront from './Components/CardFront';
+import './CSS/index.css';
+
 
 ReactDOM.render(
   <React.StrictMode>
     <Header />
-    <App />
+    <CardFront />
   </React.StrictMode>,
   document.getElementById('root')
 );
