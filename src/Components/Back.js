@@ -1,5 +1,7 @@
 import React from 'react';
+import '../App.css';
 
+// Back of the card
 class Back extends React.Component {
     render() {
       return (

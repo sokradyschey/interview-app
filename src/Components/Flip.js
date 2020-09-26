@@ -1,7 +1,7 @@
 import React from 'react';
-import Card from './Card.js';
-import Back from './Back.js';
 
+
+// JS to flip card on mouseover
 class FlipCard extends React.Component {
     constructor(props) {
         super();
@@ -15,11 +15,11 @@ class FlipCard extends React.Component {
 
     render() {
         return(
-            <div onMouseEnter={this.flip}
-            onMouseLeave={this.flip} 
-            className={"CardContainer" + (this.state.flip ? " flipped" : "")}>
-            <Card />
-            </div>
+                <button 
+                onClick={this.flip} 
+                onClick={this.flip} className={"CardContainer" + (this.state.flipped ? " flipped" : "")}>
+                Flip
+                </button>
         );
     }
 }

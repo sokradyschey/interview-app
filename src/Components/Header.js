@@ -1,6 +1,8 @@
 import React from 'react';
-import '../CSS/Header.css';
+import '../App.css';
 
+
+// NavBar Component
 class Header extends React.Component {
   render() {
     return(
