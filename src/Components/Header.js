@@ -4,10 +4,16 @@ import '../CSS/Header.css';
 function Header() {
   return(
       <div className='Container'>
-          <div className='Nav'>JavaScript</div>
-          <div className='Nav'>React</div>
-          <div className='Nav'>CSS</div>
-          <div className='Nav'>HTML</div>
+      <ul class="navigation">
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">React</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">HTML</a></li>
+      </ul>
+          <div className='Nav'></div>
+          <div className='Nav'></div>
+          <div className='Nav'></div>
+          <div className='Nav'></div>
       </div>
   );
 }

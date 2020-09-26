@@ -1,12 +1,12 @@
 .CardContainer{
     box-sizing: border-box;
-    width: 100%;
+    width: 500px;
+    height: 350px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    justify-self: center;
     align-items: center;
-    padding: 1em;
-    margin-bottom: 2em;
     background-color: #efefef;
     border: 5px solid black;
     border-radius: 20px;
