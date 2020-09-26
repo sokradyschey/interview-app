@@ -5,7 +5,7 @@ class Header extends React.Component {
   render() {
     return(
       <div className='Container'>
-        <ul class="navigation">
+        <ul className="navigation">
           <li><a href="#">JavaScript</a></li>
           <li><a href="#">React</a></li>
           <li><a href="#">CSS</a></li>

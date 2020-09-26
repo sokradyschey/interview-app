@@ -1,6 +1,5 @@
 import React from 'react';
 import '../CSS/Card.css';
-import FlipCard from './Flip.js'
 
 class Card extends React.Component {
     constructor() {
@@ -12,15 +11,12 @@ class Card extends React.Component {
     }
     render() {
       return (
-        <div className="CardWrapper">
           <div className='BodyContainer'>
             <div className='CardContainer'>
                 <div className='Title'>JavaScript Questions</div>
                 <div className="Question">{this.state.question}</div>
-                <FlipCard />
             </div>
           </div>
-        </div>
     )}
   } 
 

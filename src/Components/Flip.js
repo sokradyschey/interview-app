@@ -1,24 +1,25 @@
 import React from 'react';
+import Card from './Card.js';
+import Back from './Back.js';
 
 class FlipCard extends React.Component {
     constructor(props) {
         super();
-        this.state = {isToggleOn: true};
-
-        this.handleClick = this.handleClick.bind(this);
+        this.state = {flipped: false};
+        this.flip = this.flip.bind(this);
     }
 
-    handleClick() {
-        this.setState(state => ({
-            isToggleOn: !state.isToggleOn
-        }));
+    flip = () => {
+        this.setState({flipped: !this.state.flipped});
     }
 
     render() {
         return(
-            <button onClick={this.handleClick}>
-                {this.state.isToggleOn ? 'ON' : 'OFF'}
-            </button>
+            <div onMouseEnter={this.flip}
+            onMouseLeave={this.flip} 
+            className={"CardContainer" + (this.state.flip ? " flipped" : "")}>
+            <Card />
+            </div>
         );
     }
 }
