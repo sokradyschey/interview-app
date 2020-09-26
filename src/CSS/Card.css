@@ -1,7 +1,14 @@
+.BodyContainer {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
 .CardContainer{
     box-sizing: border-box;
     width: 500px;
-    height: 350px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

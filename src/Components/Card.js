@@ -9,9 +9,11 @@ class Card extends React.Component {
     }
     render() {
       return (
-        <div className='CardContainer'>
-            <div className='Title'>JavaScript Questions</div>
-            <div className="Question">{this.state.question}</div>
+        <div className='BodyContainer'>
+          <div className='CardContainer'>
+              <div className='Title'>JavaScript Questions</div>
+              <div className="Question">{this.state.question}</div>
+          </div>
         </div>
     )}
   }
