@@ -11,8 +11,10 @@ function Card({ frontSide, backSide }) {
   const sideClass = isFront ? "front" : "back";
   const classList = `flash-card ${sideClass}`;
   return (
-    <div className={classList} onClick={handleClick}>
-      {text}
+    <div className="card">
+      <div className={classList} onClick={handleClick}>
+        {text}
+      </div>
     </div>
   );
 }

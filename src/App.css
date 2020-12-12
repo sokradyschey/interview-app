@@ -27,6 +27,10 @@ code {
 
 
 /* Card CSS */
+.card{
+  display: flex;
+  justify-content: center;
+}
 .flash-card {
   box-sizing: border-box;
   font-size: 24px;
@@ -43,5 +47,5 @@ code {
 }
 
 .flash-card.back {
-  background-color: aquamarine;
+  background-color: rgb(163, 241, 180);
 }
