@@ -7,12 +7,12 @@ function Card(props) {
     <div className='BodyContainer'>
       <div className='CardContainer'>
         <h1>Javascript</h1>
-        <p>{props.question}</p>
+        <h2>question here</h2>
     </div>
   </div>
     )
   }
-
+  
 
 
 export default Card;
