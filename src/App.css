@@ -38,3 +38,10 @@ code {
   margin: 20px;
 }
 
+.flash-card.front {
+  background-color: #efefef;
+}
+
+.flash-card.back {
+  background-color: aquamarine;
+}
