@@ -2,23 +2,17 @@ import React from 'react';
 import '../App.css';
 
 // Front of the card
-class Card extends React.Component {
-    constructor() {
-      super();
-      this.state = {
-        question: "What is the Difference between == and ===?",
-        tips: "TBD"
-      };
-    }
-    render() {
-      return (
-            <div className='BodyContainer'>
-              <div className='CardContainer'>
-                  <div className='Title'>JavaScript Questions</div>
-                  <div className='Question'>{this.state.question}</div>
-              </div>
-            </div>
-    )}
-  } 
+function Card(props) {
+  return (
+    <div className='BodyContainer'>
+      <div className='CardContainer'>
+        <h1>Javascript</h1>
+        <p>{props.question}</p>
+    </div>
+  </div>
+    )
+  }
+
+
 
 export default Card;
