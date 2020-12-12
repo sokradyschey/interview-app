@@ -1,18 +1,25 @@
-import React from 'react';
-import '../App.css';
+import React, {useState} from 'react';
+
 
 // Front of the card
-function Card(props) {
-  return (
-    <div className='BodyContainer'>
-      <div className='CardContainer'>
-        <h1>Javascript</h1>
-        <h2>question here</h2>
-    </div>
-  </div>
-    )
+function Card({ frontSide, backSide }) {
+  const [text, setText] = useState(frontSide);
+  function handleClick() {
+    setText(oldState => {
+      if (oldState === frontSide) {
+        return backSide;
+      } else {
+        return frontSide;
+      }
+    });
   }
-  
+  return (
+    <div className='flash-card' onClick={handleClick}>
+      {text}
+    </div>
+  );
+  }
+
 
 
 export default Card;
