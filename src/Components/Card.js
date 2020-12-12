@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css';
-import Flip from './Flip.js'
 
 // Front of the card
 class Card extends React.Component {
@@ -17,7 +16,6 @@ class Card extends React.Component {
               <div className='CardContainer'>
                   <div className='Title'>JavaScript Questions</div>
                   <div className='Question'>{this.state.question}</div>
-                  <Flip />
               </div>
             </div>
     )}
